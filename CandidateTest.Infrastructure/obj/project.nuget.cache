@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wziZPdzPxpch+wdesFDvtf8uyKWDT409KPhNPDS90l3ZavSHlPQ4H0XEKI9aDQXBIaDFQCLh7aZT9Qizu6B+jw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hi\\Desktop\\CandidateTest.Api\\CandidateTest.Infrastructure\\CandidateTest.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hi\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\Hi\\.nuget\\packages\\mysqlconnector\\2.0.0\\mysqlconnector.2.0.0.nupkg.sha512",
+    "C:\\Users\\Hi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Hi\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

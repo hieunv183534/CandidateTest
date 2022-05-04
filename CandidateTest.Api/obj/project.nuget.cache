@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "On5Zq5XAWXRYiqdSeTu8mFacyK3YxYyvoFYUXPoGmHPitGTU9FBbOI4ICjTN/pJDJB/J3wzcmIc5ovykhW+eBQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hi\\Desktop\\CandidateTest.Api\\CandidateTest.Api\\CandidateTest.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
