@@ -1,0 +1,6 @@
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.csproj.AssemblyReference.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.AssemblyInfoInputs.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.AssemblyInfo.cs
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Api\obj\Debug\netcoreapp3.1\CandidateTest.Api.MvcApplicationPartsAssemblyInfo.cache

@@ -1,5 +1,6 @@
 ﻿using CandidateTest.Core.Interfaces.IRepositories;
 using Dapper;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,21 +13,23 @@ namespace CandidateTest.Infrastructure.Repositories
         #region Declare
 
         string _tableName;
+        string _connectionString;
 
         #endregion
 
         #region Consrtuctor
 
-        public BaseRepository()
+        public BaseRepository(IConfiguration configuration)
         {
             _tableName = typeof(TEntity).Name;
+            _connectionString = configuration.GetConnectionString("defaultDb");
         }
 
         #endregion
 
         public int Add(TEntity entity)
         {
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var props = entity.GetType().GetProperties();
                 DynamicParameters parameters = new DynamicParameters();
@@ -44,7 +47,7 @@ namespace CandidateTest.Infrastructure.Repositories
 
         public int Delete(Guid entityId)
         {
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var procName = $"Proc_Delete{_tableName}ById";
                 DynamicParameters parameters = new DynamicParameters();
@@ -59,7 +62,7 @@ namespace CandidateTest.Infrastructure.Repositories
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add($"@{propName}", propValue.ToString());
             var sql = $"delete from {_tableName} where {propName} = @{propName} ";
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var rowAffect = dbConnection.Execute(sql, param: parameters);
                 return rowAffect;
@@ -68,7 +71,7 @@ namespace CandidateTest.Infrastructure.Repositories
 
         public List<TEntity> GetAll()
         {
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var procName = $"Proc_GetAll{_tableName}";
                 var entities = dbConnection.Query<TEntity>(procName, commandType: CommandType.StoredProcedure);
@@ -78,7 +81,7 @@ namespace CandidateTest.Infrastructure.Repositories
 
         public TEntity GetById(Guid entityId)
         {
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var procName = $"Proc_Get{_tableName}ById";
                 DynamicParameters parameters = new DynamicParameters();
@@ -93,7 +96,7 @@ namespace CandidateTest.Infrastructure.Repositories
             DynamicParameters parameters = new DynamicParameters();
             parameters.Add($"@{propName}", propValue.ToString());
             var sql = $"select * from `{_tableName}` where {propName} = @{propName} ";
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var entity = dbConnection.QueryFirstOrDefault<TEntity>(sql, param: parameters);
                 return entity;
@@ -102,7 +105,7 @@ namespace CandidateTest.Infrastructure.Repositories
 
         public int Update(TEntity entity, Guid entityId)
         {
-            using (var dbConnection = DatabaseConnection.DbConnection)
+            using (var dbConnection = new DatabaseConnection(_connectionString).DbConnection)
             {
                 var props = entity.GetType().GetProperties();
                 DynamicParameters parameters = new DynamicParameters();
