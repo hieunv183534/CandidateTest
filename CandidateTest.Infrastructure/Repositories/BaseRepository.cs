@@ -12,8 +12,8 @@ namespace CandidateTest.Infrastructure.Repositories
     {
         #region Declare
 
-        string _tableName;
-        string _connectionString;
+        protected string _tableName;
+        protected string _connectionString;
 
         #endregion
 
@@ -35,6 +35,7 @@ namespace CandidateTest.Infrastructure.Repositories
                 DynamicParameters parameters = new DynamicParameters();
                 foreach (var prop in props)
                 {
+                    if (prop.Name == "ContentJSON_") continue;
                     var propName = prop.Name;
                     var propValue = prop.GetValue(entity);
                     parameters.Add($"@{propName}", propValue);

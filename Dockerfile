@@ -6,18 +6,18 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY ["DauStore.Api/DauStore.Api.csproj", "DauStore.Api/"]
-COPY ["DauStore.Core/DauStore.Core.csproj", "DauStore.Core/"]
-COPY ["DauStore.Infrastructure/DauStore.Infrastructure.csproj", "DauStore.Infrastructure/"]
-RUN dotnet restore "DauStore.Api/DauStore.Api.csproj"
+COPY ["CandidateTest.Api/CandidateTest.Api.csproj", "CandidateTest.Api/"]
+COPY ["CandidateTest.Core/CandidateTest.Core.csproj", "CandidateTest.Core/"]
+COPY ["CandidateTest.Infrastructure/CandidateTest.Infrastructure.csproj", "CandidateTest.Infrastructure/"]
+RUN dotnet restore "CandidateTest.Api/CandidateTest.Api.csproj"
 COPY . .
-WORKDIR "/src/DauStore.Api"
-RUN dotnet build "DauStore.Api.csproj" -c Release -o /app/build
+WORKDIR "/src/CandidateTest.Api"
+RUN dotnet build "CandidateTest.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DauStore.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "CandidateTest.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DauStore.Api.dll"]
+ENTRYPOINT ["dotnet", "CandidateTest.Api.dll"]

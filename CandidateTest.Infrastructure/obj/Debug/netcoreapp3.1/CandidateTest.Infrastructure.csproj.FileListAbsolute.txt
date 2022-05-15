@@ -1,0 +1,13 @@
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\bin\Debug\netcoreapp3.1\CandidateTest.Infrastructure.deps.json
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\bin\Debug\netcoreapp3.1\CandidateTest.Infrastructure.dll
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\bin\Debug\netcoreapp3.1\CandidateTest.Infrastructure.pdb
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\bin\Debug\netcoreapp3.1\CandidateTest.Core.dll
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\bin\Debug\netcoreapp3.1\CandidateTest.Core.pdb
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.AssemblyInfo.cs
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.csproj.CopyComplete
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.dll
+C:\Users\Hi\Desktop\CandidateTest.Api\CandidateTest.Infrastructure\obj\Debug\netcoreapp3.1\CandidateTest.Infrastructure.pdb

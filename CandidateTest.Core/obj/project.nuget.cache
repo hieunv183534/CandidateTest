@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "o1OuDQqstLMp2nsPpTGmd3w5shIUl3RZ2KCpXa8LQlA89HzB/AQi+zg2sbVwuyTbsinU2vXDnOtInQ1QSX6sEA==",
+  "dgSpecHash": "ttconMbaII3T0BQORUiU6+Bb+HacVuVreDG+yYs5ktbJA3qBGx5CUzaYOKqjalRPYBnmC013TgOKIhgRKwmLmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hi\\Desktop\\CandidateTest.Api\\CandidateTest.Core\\CandidateTest.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hi\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

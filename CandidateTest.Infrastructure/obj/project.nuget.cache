@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "mT2nfb5mJl6vYDrotXhHdJSOKh593Xa4gaYth5JHbn9nWkU6q8K8aKyobFac2i164/y7DfHcE/UcD3o1mjlroA==",
+  "dgSpecHash": "Ap4gZXO3A4HMVxp2sOES5F14iWoHqKVl/nnY+ZUbPO5bnEkKjPC7b5pi13C4gUiZDC9PwJLIdHy2lt0HTzqQrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hi\\Desktop\\CandidateTest.Api\\CandidateTest.Infrastructure\\CandidateTest.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hi\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\mysqlconnector\\2.0.0\\mysqlconnector.2.0.0.nupkg.sha512",
+    "C:\\Users\\Hi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\Hi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
